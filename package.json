@@ -1,0 +1,23 @@
+{
+  "name": "technically-correct.com",
+  "version": "0.0.0",
+  "description": "🦧 The best kind of correct",
+  "keywords": [ "🦧" ],
+  "homepage": "https://technically-correct.com",
+  "author": "omrilotan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/omrilotan/technically-correct.com.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.pug --out-dir site",
+    "prebuild": "which parcel || npm i parcel-bundler --no-save",
+    "build": "parcel build src/index.pug --out-dir site"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "pug": "^3.0.2"
+  }
+}
